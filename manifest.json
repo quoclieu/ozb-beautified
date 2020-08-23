@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "oz b styled",
+  "version": "0.1.0",
+  "description": "Aesthetic ozbargain",
+  "content_scripts": [
+    {
+      "matches": ["https://www.ozbargain.com.au/"],
+      "js": ["scripts/frontpage.js"]
+    },
+    {
+      "matches": ["https://www.ozbargain.com.au/*"],
+      "js": ["scripts/script.js"],
+      "css": ["stylesheets/styles.css"]
+    },
+    {
+      "matches": ["https://www.ozbargain.com.au/node/*"],
+      "css": ["stylesheets/nodes.css"]
+    }
+  ]
+}

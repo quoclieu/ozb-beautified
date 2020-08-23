@@ -1,0 +1,209 @@
+:root {
+  --border-clr: #ddd;
+  --borderhl-clr: #aaa;
+  --comment-hl-bg: #cdf;
+  --comment-op-bg: #eee;
+  --comment-user-bg: #fff0c0;
+  --input-fg: #111;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --light-bg: #eeeef2;
+  --light2-bg: #dddddf;
+  --link-fg: #128;
+  --link2-fg: #000;
+  --linkv-fg: #24a;
+  --menuhl-bg: #7f3f00;
+  --meta-fg: #888;
+  --page-bg: #fff;
+  /* --page-fg: #111; */
+  --page-font: 15px;
+  --shade1-bg: #e69c53;
+  --shade2-bg: #f7a859;
+  /* --shade3-bg: #cd6702; */
+  --shadow-bg: #888;
+  --tag-fg: #fff;
+  --tooltip-clr: #888;
+  --tooltip-arrow-b: url(/files/images/tooltip-arrow-bottom.png?v=2);
+  --tooltip-arrow-t: url(/files/images/tooltip-arrow-top.png?v=2);
+  --titlehl-fg: #a31;
+  --votedown-bg: #fff0f0;
+  --votedown-fg: #800;
+  --voteup-bg: #f0fff0;
+  --voteup-fg: #080;
+  /* custom */
+  --shade3-bg: #ff7a64 !important;
+  --page-fg: #242430 !important;
+  --page-bg: white;
+  --primary-theme: #ff7a64;
+  --secondary-theme: #ffef6b;
+  --highlight: #ff83b7;
+  --backdrop: #305555;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+}
+
+body > main {
+  border-top: 2px solid #ff7a64;
+}
+
+/* MAIN HEADER */
+#header form.search {
+  padding: 7px;
+  border: 3px solid var(--page-fg);
+}
+#header form.search input {
+  padding: 4px;
+}
+#header div.wrap {
+  height: 100px;
+}
+
+#menu > li div.menuitem > a {
+  padding: 15px 20px !important;
+  background-color: var(--primary-theme) !important;
+  font-size: 20px !important;
+  /* font-weight: normal !important; */
+  color: var(--page-fg) !important;
+}
+
+#menu > li.active div.menuitem > a {
+  background-color: var(--primary-theme) !important;
+}
+#menu > li.active div.menuitem > a:hover {
+  color: white !important;
+}
+
+/* SECOND HEADER */
+#header2nd {
+  background-color: var(--shade3-bg) !important;
+  padding-bottom: 30px !important;
+}
+#header2nd div.wrap {
+  background-color: var(--primary-theme) !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+#header2nd div.wrap ul {
+  width: 100%;
+}
+
+#header2nd div.wrap ul li a:hover {
+  transition: 0.2s;
+  background-color: transparent;
+  color: var(--page-fg);
+}
+
+#header2nd div.wrap ul a {
+  padding: 15px;
+}
+
+/* LISTING NODES */
+.wrap .main div.node-teaser {
+  padding: 30px 20px;
+  max-width: 900px;
+  background-color: white !important;
+  border: 3px solid var(--page-fg);
+  border-top: none;
+}
+.wrap .main div.node-teaser:first-child {
+  border-top: 3px solid var(--page-fg) !important;
+}
+.wrap .main div.node-teaser span.nvb.voteup,
+.wrap .main div.node-teaser span.nvb.votedown {
+  border-radius: 0 !important;
+  font-weight: bold;
+}
+.wrap .main div.node-teaser span.nvb {
+  border-width: 2px !important;
+}
+
+.foxshot-container a {
+  border: none !important;
+}
+
+.wrap .main div.node-teaser a {
+  color: var(--page-fg) !important;
+  font-weight: bold;
+}
+.wrap .main div.node-teaser a:hover {
+  color: var(--primary-theme) !important;
+}
+
+/* SIDEBAR */
+#sidebar .blocktitle {
+  font-size: 36px;
+  color: var(--page-fg);
+  background-color: transparent;
+}
+#sidebar .blockcontent {
+  border: none;
+}
+#sidebar .blockcontent .ozblist > li {
+  background-color: white;
+  padding: 4px;
+  border: 3px solid var(--page-fg);
+  border-bottom: none;
+}
+#sidebar .blockcontent .ozblist > li:last-child {
+  border-bottom: 3px solid var(--page-fg);
+}
+
+/* HEADINGS */
+h2.section {
+  color: var(--page-fg) !important;
+  border-bottom: none !important;
+  font-size: 36px !important;
+  text-transform: none !important;
+}
+
+h2.section + .node-teaser {
+  border-top: 3px solid var(--page-fg) !important;
+}
+
+/* TIPS */
+.wikipage {
+  /* background-color: white; */
+  border: 3px solid var(--page-fg);
+  color: white;
+  background-color: var(--page-fg);
+}
+.wikipage a {
+  color: var(--primary-theme);
+  font-weight: bold;
+}
+.wikipage a:hover {
+  color: var(--secondary-theme);
+}
+.wikipage strong:first-child {
+  font-size: 16px;
+  color: var(--secondary-theme);
+}
+
+/* FRONT PAGE SETTINGS */
+.frontpage-settings a {
+  font-size: 20px !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* ADS */
+.ads,
+.adstop,
+.ads.adslisting,
+.ads.adslistingz,
+.ads.adsbillboard {
+  display: none !important;
+}
+
+/* My own classes and tags */
+.colored-bg {
+  background-color: var(--primary-theme);
+  height: 20vh;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=styles.css.map */
