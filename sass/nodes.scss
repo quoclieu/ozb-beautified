@@ -2,6 +2,71 @@ h1 {
   font-weight: bold !important;
 }
 
-ul.tabs.primary {
+div.wrap ul.tabs.primary {
   text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.node-ozbdeal {
+  border: 3px solid var(--primary-theme);
+  padding: 10px;
+  .gotodeal a {
+    background-color: var(--primary-theme) !important;
+    color: white;
+    &:hover {
+      background-color: white !important;
+      color: var(--page-fg);
+    }
+  }
+  .right a {
+    border-radius: 0;
+    border: 2px solid var(--primary-theme);
+  }
+}
+
+main .wrap {
+  justify-content: space-between;
+}
+
+#main {
+  max-width: 900px;
+}
+
+ul.comment {
+  li {
+    .comment-wrap {
+      margin-left: 0px !important;
+      border-left: 4px solid var(--border-clr);
+      margin-bottom: 0px !important;
+      padding: 30px 20px !important;
+    }
+    .comment.comment-op {
+      background-image: none !important;
+      margin: -30px -24px;
+      padding: 20px;
+      border: 3px solid var(--primary-theme);
+      border-left-width: 4px;
+    }
+  }
+  li > .comment-wrap {
+    margin-top: 10px;
+  }
+}
+
+main {
+  border-top: var(--border);
+}
+
+header#header2nd {
+  a {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  a.active {
+    background-color: var(--primary-theme) !important;
+  }
+  li:not(:last-child) {
+    border-right: 1px solid var(--border-clr);
+  }
 }

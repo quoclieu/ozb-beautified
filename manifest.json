@@ -5,13 +5,13 @@
   "description": "Aesthetic ozbargain",
   "content_scripts": [
     {
-      "matches": ["https://www.ozbargain.com.au/"],
-      "js": ["scripts/frontpage.js"]
-    },
-    {
       "matches": ["https://www.ozbargain.com.au/*"],
       "js": ["scripts/script.js"],
       "css": ["stylesheets/styles.css"]
+    },
+    {
+      "matches": ["https://www.ozbargain.com.au/"],
+      "js": ["scripts/frontpage.js"]
     },
     {
       "matches": ["https://www.ozbargain.com.au/node/*"],
